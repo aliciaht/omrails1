@@ -4,7 +4,7 @@
 $btnPrimaryBackground: green;
 $navbarBackgroundHighlight: white;
 $navbarBackground: white;
-$linkColor: white;
+$linkColor: lightblue;
 
 @import 'bootstrap';
 
@@ -14,9 +14,15 @@ body{
 
 @import 'bootstrap-responsive';
 
+/*#innercontainer{
+	width: 80%;
+}*/
+
 .container{
 	width: 100%;
 }
+
+
 
 .hero-unit{
 	text-align: center;
