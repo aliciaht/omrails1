@@ -4,6 +4,7 @@
 $btnPrimaryBackground: green;
 $navbarBackgroundHighlight: white;
 $navbarBackground: white;
+$linkColor: white;
 
 @import 'bootstrap';
 
@@ -13,15 +14,54 @@ body{
 
 @import 'bootstrap-responsive';
 
+.container{
+	width: 100%;
+}
+
+.hero-unit{
+	text-align: center;
+	background: -webkit-gradient(linear, left top, right top, from(#1a82f7), to(gray));
+	border-radius: 0px;
+
+}
+
 .navbar-inner{
 	@include box-shadow(none !important);
 	border: 0;
 }
 
+.homebutton{
+	margin-top:15px;
+
+}
+
+#myCarousel{
+	margin: auto;
+	height: 300px;
+	width: 80%;
+}
+
+#dividerline{
+	margin: auto;
+	height: 1px;
+	width: 60%;
+	background-color: lightgray;
+}
+
+.blurbs{
+	padding-top: 20px;
+	text-align: center;
+
+	height: 200px;
+}
+
 .footer{
 	margin-top:50px;
+	background-color: black;
+	height: 100px;
 	color: $grayLight;
 	a{
 		color: $gray;
 	}
+	text-align: center;
 }

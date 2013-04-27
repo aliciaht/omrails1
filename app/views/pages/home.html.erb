@@ -1,14 +1,41 @@
 
+
+
 	<div class="hero-unit">
 		<h1>Alicia's Future Home Page</h1>
 		<p>
 			You found the home page for an
-			<%= link_to "awesome website","#" %>
+			<a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tooltip on bottom">awesome website</a> 
 			application
 		</p>
 		<p>
-			<%= link_to "Sign up Now!","#", class: "btn btn-primary btn-large" %>
+			<%= link_to "Sign up Now!","#", class: " homebutton btn btn-primary btn-large" %>
 		</p>
 	</div>
 
+<div id="myCarousel" class="carousel slide">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item">…</div>
+    <div class="item">…</div>
+    <div class="item">…</div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
 
+<div id="dividerline">
+</div>
+
+<div class="blurbs">
+	<div class="row">
+		<div class="span6">blurbs here</div>
+		<div class="span6">more blurbs here</div>
+	</div>
+</div>
