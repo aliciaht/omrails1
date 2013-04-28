@@ -6,6 +6,8 @@
 			<p>
   <%= @pin.description %>
 			</p>
+	<%= @pin.user.name %>
+			</p>
 	<%= link_to 'Edit', edit_pin_path(@pin) %> |
 	<%= link_to 'Back', pins_path %>
 
