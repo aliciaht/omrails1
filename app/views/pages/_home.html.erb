@@ -3,6 +3,11 @@
 
 		<h1>You're Logged In!</h1>
 
+<div id="pins">
+  <%= render @pins %>
+</div>
+
+<%= will_paginate @pins %>
 
 <% else %>
 		<div class="hero-unit">
@@ -38,10 +43,19 @@
 	</div>
 
 	<div class="blurbs">
-		<div class="row">
-			<div class="span6">blurbs here</div>
-			<div class="span6">more blurbs here</div>
+		<div class="row container">
+		
+			<div class="blurb1 pull-left">blurbs here Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </div>
+			<div class="blurb2 pull-right">more blurbs here Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </div>
 		</div>
 	</div>
+
+	<div class="outerpins">
+		<h2>Latest Pins</h2>
+
+	<%= render Pin.order("created_at desc").page(params[:page]).per_page(5) %>
+	</div>
+</div>
+
 
 <% end %>
