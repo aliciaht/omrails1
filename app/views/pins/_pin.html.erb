@@ -3,7 +3,7 @@
   <p class="description">
   <%= pin.description %>
 </p>
-
+<%= raw pin.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %>
 <p>
 	<strong>
 		Posted by <%= link_to pin.user.name, pin.user %>

@@ -1,7 +1,14 @@
 
 <% if user_signed_in? %>
-
-		<h1>You're Logged In!</h1>
+<!-- 
+		<h1>You're Logged In!</h1> -->
+<h3>Tag Cloud</h3>
+<div id="tag_cloud">
+  <% tag_cloud Pin.tag_counts, %w{s m l} do |tag, css_class| %>
+    <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+  <% end %>
+</div>
+<p>
 
 <div id="pins">
   <%= render @pins %>
@@ -31,9 +38,9 @@
 	  <!-- Carousel items -->
 	  <div class="carousel-inner">
 	    <div class="active item">…</div>
+	    <div class="item"><%= image_tag("Carousel_at_Hyde_Park.jpg") %></div>
 	    <div class="item">…</div>
-	    <div class="item">…</div>
-	  </div>
+	  </div>ow d
 	  <!-- Carousel nav -->
 	  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 	  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>

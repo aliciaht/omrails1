@@ -41,8 +41,23 @@ body{
 
 }
 
+#tag_cloud {
+  width: 50%;
+  line-height: 1.6em;
+  .s { font-size: 0.8em; }
+  .m { font-size: 1.2em; }
+  .l { font-size: 1.8em; }
+}
+
+
 #myCarousel{
 	margin: auto;
+	height: 300px;
+	width: 80%;
+	background-color: black;
+}
+
+#myCarousel .item{
 	height: 300px;
 	width: 80%;
 }

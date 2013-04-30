@@ -1,6 +1,6 @@
 class Pin < ActiveRecord::Base
-  attr_accessible :description, :image, :image_remote_url
-
+  attr_accessible :description, :image, :image_remote_url, :tag_list
+  acts_as_taggable
 
   validates :description, presence: true
   validates :user_id, presence: true

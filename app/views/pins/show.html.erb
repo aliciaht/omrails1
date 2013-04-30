@@ -7,6 +7,8 @@
 			<p>
  			 <%= @pin.description %>
 			</p>
+			 <%= raw @pin.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %>
+			</p>
 			<%= @pin.user.name %>
 			</p>
 			<% if current_user == @pin.user %>

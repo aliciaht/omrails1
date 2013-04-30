@@ -10,6 +10,9 @@ Omrails1::Application.routes.draw do
 
 get 'about' => 'pages#about'
 
+get 'tags/:tag', to: 'pins#index', as: :tag
+resources :pins
+
 root :to => 'pins#index'
 
   # The priority is based upon order of creation:
