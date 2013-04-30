@@ -1,9 +1,12 @@
 
-
-		<h1> <%= @user.name %></h1>
-
-	User pic here
-
+<div class="profileinfo hero-unit-inner">
+	<div class="gravatar">	
+		<%= gravatar_for @user %>
+	</div>
+	<h1> <%= @user.name %></h1>
+	Some description of user here
+	<p><p>
+</div>
 
 <div id="pins">
 	<%= render @pins %>
